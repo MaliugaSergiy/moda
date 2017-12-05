@@ -1,0 +1,11 @@
+[
+    {
+        "featureType": "all",
+        "elementType": "all",
+        "stylers": [
+            {
+                "hue": "#CC0000"
+            }
+        ]
+    }
+]

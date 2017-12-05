@@ -1,0 +1,133 @@
+<div class="remodal-bg">
+	<!--#insert file="../html/-top.html"-->
+
+
+
+	<section id="breadcrumbs" class="sticky mater_x">
+		<div class="wr">
+			<div class="wrapper">
+				<a href="#!" class="breadcrumb link">Главная</a>
+				<a href="#!" class="breadcrumb link">Каталог</a>
+				<a href="#!" class="breadcrumb link">Платья</a>
+				<a href="#!" class="breadcrumb link">Платье Весенняя Легкость</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="card">
+		<div class="wr">
+			<div class="colll left-coll">
+				<div class="left_coll_name">Платье Весенняя Легкость</div>
+				<!--<div class="slider_card slider-for" id="slick-demo">
+					<a href="img/Trend1.png" class="img_cont" style="background-image: url(img/Trend1.png)"></a>
+					<a href="img/Trend2.png" class="img_cont" style="background-image: url(img/Trend2.png)"></a>
+					<a href="img/Trend3.png" class="img_cont" style="background-image: url(img/Trend3.png)"></a>
+					<a href="img/Trend4.png" class="img_cont" style="background-image: url(img/Trend4.png)"></a>
+				</div>-->
+				<div class="slider_card slider-for" id="slick-demo">
+					<img alt="trend1" src="img/Trend1.png" class="img_cont">
+					<img alt="trend2" src="img/Trend2.png" class="img_cont">
+					<img alt="trend3" src="img/Trend3.png" class="img_cont">
+					<img alt="trend4" src="img/Trend4.png" class="img_cont">
+
+				</div>
+				<div class="slider_card slider-nav">
+					<div class="img_cont" style="background-image: url(img/Trend1.png)"></div>
+					<div class="img_cont" style="background-image: url(img/Trend2.png)"></div>
+					<div class="img_cont" style="background-image: url(img/Trend3.png)"></div>
+					<div class="img_cont" style="background-image: url(img/Trend4.png)"></div>
+				</div>
+			</div>
+			<div class="colll right-coll mater_x">
+				<div class=" rc name">Платье Весенняя Легкость</div>
+				<div class=" rc artic">Артикул:&nbsp;<span>F0169</span></div>
+				<!-- Dropdown Trigger -->
+				<div class="wr_size ">
+					<!-- 					<a class=' rc dropdown-button link' href='#' data-activates='dropdown1'>Выбрать размер&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+					Dropdown Structure
+					<ul id='dropdown1' class='dropdown-content rc mater_x'>
+						<li><a href="#!">XS</a></li>
+						<li><a href="#!">S</a></li>
+						<li><a href="#!">M</a></li>
+						<li><a href="#!">L</a></li>
+						<li><a href="#!">XL</a></li>
+						<li><a href="#!">XL</a></li>
+						<li><a href="#!">XXL</a></li>
+						<li><a href="#!">XXXL</a></li>
+					</ul> -->
+
+					<div class=" input-field select-dropp">
+						<select>
+      						<option value="" disabled selected>Выбрать размер</option>
+      						<option value="1">XS</option>
+      						<option value="2">S</option>
+      						<option value="3">M</option>
+      						<option value="3">L</option>
+      						<option value="3">XL</option>
+      						<option value="3">XXL</option>
+      						<option value="3">XXXL</option>
+   						</select>
+						<label>Ваш размер</label>
+					</div>
+				</div>
+				<div class="price rc "><span>2 999</span>&nbsp;грн</div>
+				<div class="buttons">
+					<button type="button" class="btn-main type1">Добавить в корзину</button>
+					<a  class="btn-main type2 addFavourites">Добавить в избранное</a>
+				</div>
+				<ul class="collapsible rc " data-collapsible="expandable">
+					<li>
+						<div class="collapsible-header activeF link">Описание</div>
+						<div class="collapsible-body">
+							<div class="readmore">
+								Трикотажное платье без рукавов и округлым вырезом горловины. Небольшие складки по линии талии и широкий втачной пояс формируют привлекательный силуэт. Отличный выбор для ярких будней.
+
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="collapsible-header link">Характеристики</div>
+						<div class="collapsible-body">
+							<div class="readmore readmore2">
+								<div class="item">
+									<div class="prop">Вырез горловины:</div>
+									<div class="value">Округлый вырез</div>
+								</div>
+								<div class="item">
+									<div class="prop">Длина изделия:</div>
+									<div class="value">Миди, 92.0 см</div>
+								</div>
+								<div class="item">
+									<div class="prop">Длина рукава:</div>
+									<div class="value">Длинные, 57.0 см</div>
+								</div>
+								<div class="item">
+									<div class="prop">Покрой:</div>
+									<div class="value">Приталенный</div>
+								</div>
+								<div class="item">
+									<div class="prop">Сезон:</div>
+									<div class="value">демисезон</div>
+								</div>
+							</div>
+						</div>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		$(document).ready(function() {
+			$(".addFavourites").on("click", function(){
+				$(this).toggleClass("activeF");
+				if ($(this).hasClass("activeF")) {$(this).html("Убрать из избранного");} 
+				else {$(this).html("Добавить в корзину");}
+			})
+		});
+	</script>
+
+	<!--#insert file="../html/-recomendation.html"-->
+	<!--#insert file="../html/-overFooter.html"-->
+	<!--#insert file="../html/-bottom.html"-->
